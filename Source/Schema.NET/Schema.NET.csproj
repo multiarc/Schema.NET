@@ -5,6 +5,8 @@
     <EmitCompilerGeneratedFiles>True</EmitCompilerGeneratedFiles>
     <CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)\GeneratedFiles</CompilerGeneratedFilesOutputPath>
     <IncludePendingSchemaObjects>False</IncludePendingSchemaObjects>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\Key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <PropertyGroup Label="Package">
@@ -38,6 +40,12 @@
 
   <ItemGroup Label="Source Generation">
     <AdditionalFiles Include="../../Data/*.*" LinkBase="Data" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Key.snk">
+      <Link>Key.snk</Link>
+    </None>
   </ItemGroup>
 
 </Project>
