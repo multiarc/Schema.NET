@@ -42,7 +42,7 @@ jobs:
         with:
           dotnet-version: 8.0.x
       - name: "Install Mono runtime"
-        if: ${{matrix.os}} == 'ubuntu-latest'
+        if: matrix.os == 'ubuntu-latest'
         run: sudo sh ./.github/scripts/install-mono-devel.sh
         shell: sh
       - name: "Dotnet Tool Restore"
