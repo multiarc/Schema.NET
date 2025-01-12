@@ -1,6 +1,6 @@
 #! /bin/sh
 
-sudo apt install dirmngr ca-certificates gnupg -Y
+sudo apt install dirmngr ca-certificates gnupg -y
 
 sudo gpg --homedir /tmp --no-default-keyring --keyring \
 /usr/share/keyrings/mono-official-archive-keyring.gpg \
@@ -10,4 +10,4 @@ echo "deb [signed-by=/usr/share/keyrings/mono-official-archive-keyring.gpg] http
 
 sudo apt update
 
-sudo apt install mono-complete -Y
+sudo apt install mono-complete -y
