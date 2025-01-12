@@ -77,7 +77,9 @@ Task("Test")
                 });
             // Workaround the test-summary GitHub Action not being able to handle empty JUnit test result XML files.
             // https://github.com/test-summary/action/issues/19
+            DeleteFiles($"./**/{project.GetFilenameWithoutExtension()}_NETFramework462.xml");
             DeleteFiles($"./**/{project.GetFilenameWithoutExtension()}_NETFramework472.xml");
+            DeleteFiles($"./**/{project.GetFilenameWithoutExtension()}_NETFramework48.xml");
         });
 
 Task("Pack")
