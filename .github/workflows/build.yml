@@ -53,11 +53,11 @@ jobs:
         run: dotnet test -c Debug --collect:"XPlat Code Coverage" --logger trx --no-restore --no-build --results-directory ./Artefacts -- RunConfiguration.DisableAppDomain=true
       - name: "Dotnet Pack"
         run: dotnet pack -c Release --no-build --no-restore --include-source --include-symbols -o ./Artefacts
-      - name: "Publish Artefacts"
-        uses: actions/upload-artifact@v4.6.0
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v2
         with:
           name: ${{matrix.os}}
-          path: "./Artefacts"
+          path: "./**/*.trx"
 
   publish-test-results:
     name: "Publish Tests Results"
