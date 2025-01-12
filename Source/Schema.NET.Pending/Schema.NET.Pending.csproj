@@ -5,6 +5,8 @@
     <EmitCompilerGeneratedFiles>True</EmitCompilerGeneratedFiles>
     <CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)\GeneratedFiles</CompilerGeneratedFilesOutputPath>
     <IncludePendingSchemaObjects>True</IncludePendingSchemaObjects>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\Key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <PropertyGroup Label="Package">
