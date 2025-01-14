@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup Label="Common Code">
-    <Compile Include="../Schema.NET.Tool.Shared/**/*.*" />
+    <Compile Include="../Common/**/*.*" />
   </ItemGroup>
 
   <ItemGroup Label="Files">

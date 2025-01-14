@@ -41,7 +41,7 @@
   </Target>
 
   <ItemGroup Label="Common Code">
-    <Compile Include="../Schema.NET.Tool.Shared/**/*.cs" />
+    <Compile Include="../Common/**/*.cs" />
   </ItemGroup>
 
   <ItemGroup Label="Files">
