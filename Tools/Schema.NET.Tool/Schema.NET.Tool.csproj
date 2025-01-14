@@ -20,7 +20,7 @@
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.5.0" />
     <PackageReference Include="System.Text.Json" Version="6.0.11" />
   </ItemGroup>
-  
+
   <ItemGroup Label="Common Code">
     <Compile Include="../Schema.NET.Tool.Shared/**/*.*" />
   </ItemGroup>

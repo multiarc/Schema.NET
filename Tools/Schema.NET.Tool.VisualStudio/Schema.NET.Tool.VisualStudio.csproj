@@ -38,7 +38,7 @@
       <TargetPathWithTargetPlatformMoniker Include="$(PKGSystem_Threading_Tasks_Extensions)\lib\netstandard2.0\*.dll" IncludeRuntimeDependency="false" />
     </ItemGroup>
   </Target>
-  
+
   <ItemGroup Label="Common Code">
     <Compile Include="../Schema.NET.Tool.Shared/**/*.cs" />
   </ItemGroup>
