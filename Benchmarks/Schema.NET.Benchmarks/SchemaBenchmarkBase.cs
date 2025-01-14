@@ -14,8 +14,6 @@ using BenchmarkDotNet.Jobs;
 [RPlotExporter]
 [SimpleJob(RuntimeMoniker.Net80)]
 [SimpleJob(RuntimeMoniker.Net60)]
-[SimpleJob(RuntimeMoniker.Net462)]
-[SimpleJob(RuntimeMoniker.Net472)]
 [SimpleJob(RuntimeMoniker.Net48)]
 public abstract class SchemaBenchmarkBase
 {
